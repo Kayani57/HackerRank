@@ -4,25 +4,30 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.lang.reflect.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+
 
 class Add{
     
-public void add(int... args)
-{
-    int sum=0;
-   for(int x:args)
-   {
-      sum+=x; 
-   } 
-   System.out.println(sum);
-}
-}
-
-
-
+    public void add(int... args)
+    {
+        int sum=0;
+           for(int i=0;i<args.length;i++)
+           {
+               
+          sum+=args[i];
+          System.out.print(args[i]);
+          if(i<args.length-1)
+          {
+              System.out.print("+");
+          }
+          
+         
+           }
+           System.out.print("="+sum);
+           System.out.println();
+           
+    }}
+    
 class Solution {
 
     public static void main(String[] args) {
