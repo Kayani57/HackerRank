@@ -64,6 +64,7 @@ public class JavaReflection {
 
      public static void main(String[] args){
             Student s=new Student();
+            @SuppressWarnings("rawtypes")
             Class student = s.getClass();
             Method[] methods = student.getDeclaredMethods();
 
