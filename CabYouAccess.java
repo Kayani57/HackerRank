@@ -1,7 +1,7 @@
 package HackerRank;
 import java.io.*;
 
-
+//
 
 class Solution {
 
@@ -18,7 +18,7 @@ class Solution {
 		
 		}//end of try
 		
-		catch (DoNotTerminate.ExitTrappedException e) {
+		catch (Exception e) {
 			System.out.println("Unsuccessful Termination!!");
 		}
 	}//end of main
@@ -32,13 +32,5 @@ class Solution {
 	
 }//end of Solution
 
-class DoNotTerminate { //This class prevents exit(0)
-	 
-    public static class ExitTrappedException extends SecurityException {
 
-		private static final long serialVersionUID = 1L;
-    }
- 
-    
-}	
 	
