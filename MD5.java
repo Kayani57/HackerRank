@@ -33,4 +33,5 @@ class Solution {
         
         System.out.println(md5(input));
         sc.close();
+        
     }}
